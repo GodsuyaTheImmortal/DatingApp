@@ -11,11 +11,11 @@ namespace API.DTOs
         [Required]
         public string  Gender { get; set; }
         [Required]
-        public DateOnly  DateOfBirth { get; set; }
+        public DateOnly?  DateOfBirth { get; set; }
         [Required]
-        public string  city { get; set; }
+        public string  City { get; set; }
          [Required]
-        public string  country { get; set; }
+        public string  Country { get; set; }
         [Required]
         [StringLength(100, MinimumLength = 8)]
         public string Password { get; set; }
