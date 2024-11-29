@@ -32,6 +32,8 @@ namespace API.Extensions
 
             services.AddScoped<IPhotoService, PhotoService>();
 
+            services.AddScoped<LogUserActivity>();
+
             // Return the service collection to allow for method chaining
             return services;
         }
