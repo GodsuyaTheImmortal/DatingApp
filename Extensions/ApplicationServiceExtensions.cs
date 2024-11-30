@@ -34,6 +34,8 @@ namespace API.Extensions
 
             services.AddScoped<LogUserActivity>();
 
+            services.AddScoped<ILikesRespository, LikesRepository>();
+
             // Return the service collection to allow for method chaining
             return services;
         }
